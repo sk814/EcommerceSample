@@ -1,11 +1,5 @@
 from django.db import models
 
-class Users(models.Model):
-    username = models.CharField(max_length=60)
-    password = models.CharField(max_length=60)
-    def __str__(self):
-        return self.username
-
 class Products(models.Model):
     product_name = models.CharField(max_length=60)
     stock = models.IntegerField()
